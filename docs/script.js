@@ -74,10 +74,8 @@ function animateValue(
 ) {
   const obj = document.getElementById(id);
   const range = end - start;
-  const minTimer = 5; // minimum time between updates in ms
+  const minTimer = 5;
   let stepTime = Math.abs(Math.floor(duration / range));
-
-  // Ensure the step time isn't too small
   stepTime = Math.max(stepTime, minTimer);
 
   let startTime = new Date().getTime();
@@ -88,11 +86,8 @@ function animateValue(
     let now = new Date().getTime();
     let remaining = Math.max((endTime - now) / duration, 0);
     let value = Math.round(end - remaining * range);
-
-    // Format the number with commas
     let formattedValue = value.toLocaleString();
 
-    // Add percentage sign or plus sign if needed
     if (isPercentage) formattedValue += "%";
     if (hasPlus && value >= end) formattedValue += "+";
 
@@ -107,22 +102,76 @@ function animateValue(
   run();
 }
 
-// Start animations when page loads
+// Object to track animation status
+const animationStatus = {
+  satisfaction: false,
+  conversion: false,
+  projects: false,
+  products: false,
+  clients: false,
+};
+
+// Create intersection observer
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+
+        // Only animate if it hasn't been animated before
+        if (!animationStatus[id]) {
+          switch (id) {
+            case "satisfaction":
+              animateValue(id, 0, 98, 2000, true);
+              break;
+            case "conversion":
+              animateValue(id, 0, 1000, 2000, false, true);
+              break;
+            case "projects":
+              animateValue(id, 0, 100, 2000, false, true);
+              break;
+            case "products":
+              animateValue(id, 0, 10, 2000, false, false);
+              break;
+            case "clients":
+              animateValue(id, 0, 250, 2000, false, true);
+              break;
+          }
+
+          // Mark this animation as completed
+          animationStatus[id] = true;
+
+          // Optionally, stop observing this element
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  },
+  {
+    // Element becomes visible when it's 20% in view
+    threshold: 0.2,
+    // Start animation slightly before element comes into view
+    rootMargin: "50px",
+  }
+);
+
+// Start observing elements when page loads
 window.onload = function () {
-  // Animate satisfaction percentage from 0 to 98
-  animateValue("satisfaction", 0, 98, 2000, true);
+  // Observe all elements that need animation
+  const elements = [
+    "satisfaction",
+    "conversion",
+    "projects",
+    "products",
+    "clients",
+  ];
 
-  // Animate conversion rate from 0 to 1000
-  animateValue("conversion", 0, 1000, 2000, false, true);
-
-  // Animate project rate from 0 to 100
-  animateValue("projects", 0, 100, 2000, false, true);
-
-  // Animate products rate from 0 to 10
-  animateValue("products", 0, 10, 2000, false, false);
-
-  // Animate clients rate from 0 to 100
-  animateValue("clients", 0, 250, 2000, false, true);
+  elements.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      observer.observe(element);
+    }
+  });
 };
 
 const banner = document.getElementById("banner");
