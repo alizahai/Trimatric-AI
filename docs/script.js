@@ -63,6 +63,48 @@ menuPanel.addEventListener("click", (e) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("sliderTrack");
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let currentIndex = 0;
+  let visibleSlides = getVisibleSlides();
+
+  function getVisibleSlides() {
+    return window.innerWidth >= 1024 ? 4 : window.innerWidth >= 640 ? 3 : 1;
+  }
+
+  function updateSlider() {
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= slides.length - visibleSlides;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - visibleSlides) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    visibleSlides = getVisibleSlides();
+    updateSlider();
+  });
+
+  updateSlider();
+});
+
 // Function to animate number counting
 function animateValue(
   id,
@@ -197,3 +239,27 @@ function showNextTestimonial() {
 }
 
 setInterval(showNextTestimonial, 5000); // Slide every 5 seconds
+
+// Work section slider
+const workSlider = document.getElementById("slider");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+let stepIndex = 0;
+
+function updateSlider() {
+  workSlider.style.transform = `translateX(-${stepIndex * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  if (stepIndex < 3) {
+    stepIndex++;
+    updateSlider();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (stepIndex > 0) {
+    stepIndex--;
+    updateSlider();
+  }
+});
