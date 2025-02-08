@@ -166,180 +166,27 @@
       <section
         class="bg-[#F0F2F4] bg-[url('https://trimatric.ai/wp-content/uploads/2024/04/home-5-bg.png')] bg-no-repeat bg-top-left pb-5"
       >
-        <div class="pb-4"></div>
         <!-- Navbar -->
         <nav
-          class="w-[90%] m-auto rounded-xl h-20 flex items-center justify-between px-8 bg-white sticky z-50"
+          class="w-full m-auto h-20 flex items-center justify-between px-10 bg-white sticky z-50"
         >
-          <!-- Left Section -->
-          <div class="hidden lg:flex items-center space-x-20">
-            <button id="menuButton" class="p-2 hover:bg-gray-100 rounded-lg">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="24px"
-                height="24px"
-                viewBox="0 0 122.88 121.135"
-                enable-background="new 0 0 122.88 121.135"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M74.401,65.787h41.427c1.943,0,3.707,0.791,4.982,2.068c1.276,1.230,2.069,3.039,2.069,4.982v41.246 c0,1.941-0.793,3.707-2.069,4.98c-1.230,1.277-3.039,2.07-4.982,2.07H74.401c-1.942,0-3.706-0.793-4.982-2.07 c-1.230-1.273-2.068-3.039-2.068-4.98V72.838c0-1.943,0.793-3.707,2.068-4.982C70.695,66.578,72.459,65.787,74.401,65.787 L74.401,65.787z M7.052,0h41.426c1.942,0,3.707,0.792,4.983,2.069s2.068,3.04,2.068,4.983v41.245c0,1.943-0.792,3.707-2.068,4.982 c-1.276,1.276-3.041,2.069-4.983,2.069H7.052c-1.934,0-3.692-0.793-4.969-2.069l-0.007-0.006l-0.007,0.006 C0.792,52.003,0,50.239,0,48.296V7.052c0-1.943,0.792-3.707,2.069-4.983C2.162,1.976,2.26,1.888,2.359,1.807 C3.607,0.685,5.255,0,7.052,0L7.052,0z M48.131,7.397H7.397V47.95h40.733V7.397L48.131,7.397z M74.401,0h41.427 c1.943,0,3.707,0.792,4.982,2.069c1.276,1.276,2.069,3.04,2.069,4.983v41.245c0,1.943-0.793,3.707-2.069,4.982 c-1.230,1.276-3.039,2.069-4.982,2.069H74.401c-1.942,0-3.706-0.793-4.982-2.069c-1.230-1.230-2.068-3.04-2.068-4.982V7.052 c0-1.943,0.793-3.707,2.068-4.983C70.695,0.792,72.459,0,74.401,0L74.401,0z M115.482,7.397H74.748V47.95h40.734V7.397 L115.482,7.397z M7.052,65.787h41.426c1.942,0,3.707,0.791,4.983,2.068c1.276,1.230,2.068,3.039,2.068,4.982v41.246 c0,1.941-0.792,3.707-2.068,4.98c-1.276,1.277-3.041,2.07-4.983,2.07H7.052c-1.934,0-3.692-0.793-4.969-2.07l-0.007-0.006 l-0.007,0.006C0.792,117.791,0,116.025,0,114.084V72.838c0-1.943,0.792-3.707,2.069-4.982c0.093-0.094,0.191-0.182,0.291-0.264 C3.607,66.471,5.255,65.787,7.052,65.787L7.052,65.787z M48.131,73.184H7.397v40.553h40.733V73.184L48.131,73.184z M115.482,73.184 H74.748v40.553h40.734V73.184L115.482,73.184z"
-                  />
-                </g>
-              </svg>
-            </button>
+          <!-- Logo (Left Side) -->
+          <div class="w-12">
+            <a class="logo-link" href="https://trimatric.ai/">
+              <img
+                width="48"
+                height="48"
+                src="https://trimatric.ai/wp-content/uploads/2024/10/Icon-SVG-96.svg"
+                alt="Trimatric AI"
+              />
+            </a>
+          </div>
 
-            <!-- Menu Panel -->
-            <div id="menuPanel" class="fixed inset-0 z-50 hidden">
-              <div
-                class="absolute left-0 m-4 h-full w-72 bg-gray-900 text-white shadow-lg rounded-2xl bg-[url('https://trimatric.ai/wp-content/themes/neuros/img/sidepanel-bg.png')] bg-no-repeat bg-bottom"
-              >
-                <!-- Close Button -->
-                <button
-                  id="closebutton"
-                  class="absolute top-4 left-4 text-white hover:text-gray-300"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                  </svg>
-                </button>
-
-                <!-- Content -->
-                <div class="p-8 pt-16">
-                  <!-- Logo -->
-                  <div class="w-8 pb-5">
-                    <a class="logo-link" href="https://trimatric.ai/"
-                      ><img
-                        width="48"
-                        height="48"
-                        src="https://trimatric.ai/wp-content/uploads/2024/10/Icon-SVG-96.svg"
-                        alt="Trimatric AI"
-                    /></a>
-                  </div>
-                  <h2 class="text-sm font-semibold mb-6">CONTACTS</h2>
-
-                  <div class="space-y-4">
-                    <p class="text-sm leading-relaxed">
-                      125, Mezonet Building, Ramna Century Avenue, Moghbazar
-                      Wireless, Dhaka
-                    </p>
-
-                    <p class="text-sm">+8801886636200</p>
-
-                    <a
-                      href="mailto:info@trimatric.ai"
-                      class="text-sm text-blue-400 hover:text-blue-300 block"
-                    >
-                      info@trimatric.ai
-                    </a>
-                  </div>
-
-                  <button
-                    class="mt-8 px-6 py-2 border border-white/20 rounded-full text-sm hover:bg-white/10"
-                  >
-                    Get in touch
-                  </button>
-
-                  <!-- Social Links -->
-                  <div class="absolute bottom-16 left-8 flex space-x-4">
-                    <a
-                      href="https://www.linkedin.com/company/trimatric-ai"
-                      target="_blank"
-                      class="text-white/70 hover:text-[#6a0ef8]"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                        ></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/trimatricai"
-                      target="_blank"
-                      class="text-white/70 hover:text-[#6a0ef8]"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                        ></path>
-                      </svg>
-                    </a>
-
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      class="text-white/70 hover:text-[#6a0ef8]"
-                      target="_blank"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                        ></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://www.youtube.com/@TrimatricAI"
-                      target="_blank"
-                      class="text-white/70 hover:text-[#6a0ef8]"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
-                        ></path>
-                        <polygon
-                          points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
-                        ></polygon>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Links -->
-            <ul
-              class="hidden lg:flex space-x-5 text-sm font-semibold text-gray-700"
-            >
-              <li class="px-3 py-1 bg-black text-white rounded-full uppercase">
+          <!-- Center Navigation -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <!-- Left Links -->
+            <ul class="flex space-x-5 text-sm font-semibold text-gray-700">
+              <li class="py-1 uppercase">
                 <a href="https://trimatric.ai" aria-current="page">Home</a>
               </li>
               <li class="py-1 uppercase">
@@ -349,21 +196,8 @@
                 <a href="https://trimatric.ai/services/">Services</a>
               </li>
             </ul>
-          </div>
 
-          <!-- Logo -->
-          <div class="w-8">
-            <a class="logo-link" href="https://trimatric.ai/"
-              ><img
-                width="48"
-                height="48"
-                src="https://trimatric.ai/wp-content/uploads/2024/10/Icon-SVG-96.svg"
-                alt="Trimatric AI"
-            /></a>
-          </div>
-
-          <!-- Right Section -->
-          <div class="hidden lg:flex items-center space-x-5">
+            <!-- Right Links -->
             <ul class="flex space-x-8 text-sm font-semibold text-gray-700">
               <li class="py-1 uppercase">
                 <a href="https://trimatric.ai/products/">Products</a>
@@ -375,23 +209,173 @@
                 <a href="https://trimatric.ai/contacts/">Contacts</a>
               </li>
             </ul>
-            <!-- Button -->
-            <a
-              href="https://trimatric.ai/contact"
-              class="ms-20 text-sm px-2 py-2 border border-[rgb(106,14,248)] text-[rgb(106,14,248)] rounded-full hover:text-white hover:!bg-[rgb(106,14,248)] transition"
-            >
-              Get in touch
-            </a>
           </div>
-          <!--menu icon-->
+
+          <!-- Menu Icon (Right Side) -->
+          <button
+            id="menuButton"
+            class="hidden md:flex p-2 hover:bg-gray-100 rounded-lg"
+          >
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="24px"
+              height="24px"
+              viewBox="0 0 122.88 121.135"
+              enable-background="new 0 0 122.88 121.135"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M74.401,65.787h41.427c1.943,0,3.707,0.791,4.982,2.068c1.276,1.230,2.069,3.039,2.069,4.982v41.246 c0,1.941-0.793,3.707-2.069,4.98c-1.230,1.277-3.039,2.07-4.982,2.07H74.401c-1.942,0-3.706-0.793-4.982-2.07 c-1.230-1.273-2.068-3.039-2.068-4.98V72.838c0-1.943,0.793-3.707,2.068-4.982C70.695,66.578,72.459,65.787,74.401,65.787 L74.401,65.787z M7.052,0h41.426c1.942,0,3.707,0.792,4.983,2.069s2.068,3.04,2.068,4.983v41.245c0,1.943-0.792,3.707-2.068,4.982 c-1.276,1.276-3.041,2.069-4.983,2.069H7.052c-1.934,0-3.692-0.793-4.969-2.069l-0.007-0.006l-0.007,0.006 C0.792,52.003,0,50.239,0,48.296V7.052c0-1.943,0.792-3.707,2.069-4.983C2.162,1.976,2.26,1.888,2.359,1.807 C3.607,0.685,5.255,0,7.052,0L7.052,0z M48.131,7.397H7.397V47.95h40.733V7.397L48.131,7.397z M74.401,0h41.427 c1.943,0,3.707,0.792,4.982,2.069c1.276,1.276,2.069,3.04,2.069,4.983v41.245c0,1.943-0.793,3.707-2.069,4.982 c-1.230,1.276-3.039,2.069-4.982,2.069H74.401c-1.942,0-3.706-0.793-4.982-2.069c-1.230-1.230-2.068-3.04-2.068-4.982V7.052 c0-1.943,0.793-3.707,2.068-4.983C70.695,0.792,72.459,0,74.401,0L74.401,0z M115.482,7.397H74.748V47.95h40.734V7.397 L115.482,7.397z M7.052,65.787h41.426c1.942,0,3.707,0.791,4.983,2.068c1.276,1.230,2.068,3.039,2.068,4.982v41.246 c0,1.941-0.792,3.707-2.068,4.98c-1.276,1.277-3.041,2.07-4.983,2.07H7.052c-1.934,0-3.692-0.793-4.969-2.07l-0.007-0.006 l-0.007,0.006C0.792,117.791,0,116.025,0,114.084V72.838c0-1.943,0.792-3.707,2.069-4.982c0.093-0.094,0.191-0.182,0.291-0.264 C3.607,66.471,5.255,65.787,7.052,65.787L7.052,65.787z M48.131,73.184H7.397v40.553h40.733V73.184L48.131,73.184z M115.482,73.184 H74.748v40.553h40.734V73.184L115.482,73.184z"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <!-- Menu Panel -->
+          <div id="menuPanel" class="fixed inset-0 z-50 hidden">
+            <div
+              class="absolute left-0 m-4 h-full w-72 bg-gray-900 text-white shadow-lg rounded-2xl bg-[url('https://trimatric.ai/wp-content/themes/neuros/img/sidepanel-bg.png')] bg-no-repeat bg-bottom"
+            >
+              <!-- Close Button -->
+              <button
+                id="closebutton"
+                class="absolute top-4 left-4 text-white hover:text-gray-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+
+              <!-- Content -->
+              <div class="p-8 pt-16">
+                <!-- Logo -->
+                <div class="w-8 pb-5">
+                  <a class="logo-link" href="https://trimatric.ai/">
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://trimatric.ai/wp-content/uploads/2024/10/Icon-SVG-96.svg"
+                      alt="Trimatric AI"
+                    />
+                  </a>
+                </div>
+                <h2 class="text-sm font-semibold mb-6">CONTACTS</h2>
+
+                <div class="space-y-4">
+                  <p class="text-sm leading-relaxed">
+                    125, Mezonet Building, Ramna Century Avenue, Moghbazar
+                    Wireless, Dhaka
+                  </p>
+                  <p class="text-sm">+8801886636200</p>
+                  <a
+                    href="mailto:info@trimatric.ai"
+                    class="text-sm text-blue-400 hover:text-blue-300 block"
+                  >
+                    info@trimatric.ai
+                  </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="absolute bottom-16 left-8 flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/company/trimatric-ai"
+                    target="_blank"
+                    class="text-white/70 hover:text-[#6a0ef8]"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/trimatricai"
+                    target="_blank"
+                    class="text-white/70 hover:text-[#6a0ef8]"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="text-white/70 hover:text-[#6a0ef8]"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@TrimatricAI"
+                    target="_blank"
+                    class="text-white/70 hover:text-[#6a0ef8]"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                      ></path>
+                      <polygon
+                        points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                      ></polygon>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Icon -->
           <div class="lg:hidden">
-            <!-- Menu Button -->
             <a href="#" class="text-3xl cursor-pointer" onclick="toggleMenu()">
               &#8801;
             </a>
           </div>
 
-          <!-- Side Menu -->
+          <!-- Mobile Side Menu -->
           <div
             id="side-menu"
             class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300"
@@ -409,39 +393,38 @@
               <a
                 href="https://trimatric.ai"
                 class="text-lg font-semibold hover:text-[rgb(106,14,248)]"
-                >Home</a
               >
+                Home
+              </a>
               <a
                 href="https://trimatric.ai/about-trimatric/"
                 class="text-lg hover:text-[rgb(106,14,248)]"
-                >About Us</a
               >
+                About Us
+              </a>
               <a
                 href="https://trimatric.ai/services/"
                 class="text-lg hover:text-[rgb(106,14,248)]"
-                >Services</a
               >
+                Services
+              </a>
               <a
                 href="https://trimatric.ai/products/"
                 class="text-lg hover:text-[rgb(106,14,248)]"
-                >Products</a
               >
+                Products
+              </a>
               <a
                 href="https://trimatric.ai/careers-page/"
                 class="text-lg hover:text-[rgb(106,14,248)]"
-                >Careers</a
               >
+                Careers
+              </a>
               <a
                 href="https://trimatric.ai/contacts/"
                 class="text-lg hover:text-[rgb(106,14,248)]"
-                >Contacts</a
               >
-
-              <a
-                href="https://trimatric.ai/contact"
-                class="mt-4 px-6 py-2 border-2 border-[rgb(106,14,248)] text-[rgb(106,14,248)] rounded-lg hover:bg-[rgb(106,14,248)] hover:text-white transition"
-              >
-                Get in touch
+                Contacts
               </a>
             </nav>
           </div>
@@ -592,106 +575,100 @@
           />
         </div>
 
-        <!-- Scrollable wrapper -->
-        <div class="relative w-full mt-20">
-          <div class="overflow-x-auto">
-            <!-- Original flex container -->
-            <div class="flex items-end gap-4 px-4 pb-4 min-w-min">
+        <!-- Modern Slider -->
+        <div class="relative w-full mt-20 px-6">
+          <!-- Navigation Arrows -->
+          <button
+            id="prevBtn"
+            class="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <button
+            id="nextBtn"
+            class="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Images Container -->
+          <div class="overflow-hidden">
+            <div
+              id="sliderTrack"
+              class="flex transition-transform duration-300 ease-in-out items-end"
+            >
               <!-- Individual image items -->
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/915x942-scaled.webp"
-                    alt=""
-                  />
-                  <span
-                    class="leading-none absolute rotate-180 bottom-0 right-0 text-white px-2 py-1 rounded text-3xl font-bold flex flex-col items-center"
-                  >
-                    <span class="rotate-90">3</span>
-                    <span class="rotate-90">D</span>
-                  </span>
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/915x942-scaled.webp"
+                  alt=""
+                />
               </div>
 
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/586x776-.01-scaled.webp"
-                    alt=""
-                  />
-                  <span
-                    class="leading-none absolute rotate-180 bottom-0 right-0 text-white px-2 py-1 rounded text-3xl font-bold flex flex-col items-center"
-                  >
-                    <span class="rotate-90">V</span>
-                    <span class="rotate-90">e</span>
-                    <span class="rotate-90">h</span>
-                    <span class="rotate-90">i</span>
-                    <span class="rotate-90">c</span>
-                    <span class="rotate-90">l</span>
-                    <span class="rotate-90">e</span>
-                  </span>
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/586x776-.01-scaled.webp"
+                  alt=""
+                />
               </div>
 
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/587x581.webp"
-                    alt=""
-                  />
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/587x581.webp"
+                  alt=""
+                />
               </div>
 
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/586x776-scaled.webp"
-                    alt=""
-                  />
-                  <span
-                    class="leading-none absolute rotate-180 bottom-0 right-0 text-white px-2 py-1 rounded text-3xl font-bold flex flex-col items-center"
-                  >
-                    <span class="rotate-90">D</span>
-                    <span class="rotate-90">e</span>
-                    <span class="rotate-90">s</span>
-                    <span class="rotate-90">i</span>
-                    <span class="rotate-90">g</span>
-                    <span class="rotate-90">n</span>
-                  </span>
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/586x776-scaled.webp"
+                  alt=""
+                />
               </div>
 
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/586x884-scaled.webp"
-                    alt=""
-                  />
-                  <span
-                    class="leading-none absolute rotate-180 bottom-0 right-0 text-white px-2 py-1 rounded text-3xl font-bold flex flex-col items-center"
-                  >
-                    <span class="rotate-90">H</span>
-                    <span class="rotate-90">u</span>
-                    <span class="rotate-90">m</span>
-                    <span class="rotate-90">a</span>
-                    <span class="rotate-90">n</span>
-                  </span>
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/586x884-scaled.webp"
+                  alt=""
+                />
               </div>
 
-              <div class="relative flex-shrink-0 w-72">
-                <a href="#" class="block">
-                  <img
-                    class="rounded-2xl w-full h-auto object-cover"
-                    src="https://trimatric.ai/wp-content/uploads/2024/10/588x581.webp"
-                    alt=""
-                  />
-                </a>
+              <div class="slide w-4/5 sm:w-1/3 lg:w-1/4 flex-shrink-0 p-2">
+                <img
+                  class="rounded-xl w-full object-cover"
+                  src="https://trimatric.ai/wp-content/uploads/2024/10/588x581.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -816,15 +793,17 @@
     <!-- About Us section ends here -->
 
     <!-- Services section starts here -->
-    <section class="my-10 w-[90%] md:w-[80%] p-10 md:ps-20">
+    <section class="my-10 p-10 md:ps-20">
       <div class="flex flex-col">
         <p class="font-medium">/ Services /</p>
-        <h1 class="pb-10 md:pb-20 font-semibold text-3xl md:text-6xl">
+        <h1 class="pb-10 w-[60%] md:pb-20 font-semibold text-3xl md:text-6xl">
           Enhance your brand with our customized solutions
         </h1>
+      </div>
 
-        <!--First service-->
-        <div class="mb-10">
+      <div class="flex flex-wrap gap-10 justify-center mx-auto">
+        <!-- Service Card 1 -->
+        <div class="w-[400px] p-6 shadow-lg rounded-2xl border border-gray-200">
           <svg
             width="100"
             height="88"
@@ -844,28 +823,23 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="w-[260px] md:w-[400px]">
-            <h2 class="font-semibold text-2xl md:text-3xl mt-10 mb-5">
-              AI Model Development
-            </h2>
-            <p>
-              We specialize in the development of advanced AI-driven software
-              solutions tailored to meet the specific needs of businesses and
-              industries.
-            </p>
-
-            <div class="border border-b-[1px] my-5"></div>
-          </div>
-          <ul class="custom-list">
+          <h2 class="font-semibold text-2xl md:text-3xl mt-6 mb-4">
+            AI Model Development
+          </h2>
+          <p>
+            We specialize in the development of advanced AI-driven software
+            solutions tailored to meet the specific needs of businesses and
+            industries.
+          </p>
+          <ul class="custom-list mt-4">
             <li>Custom AI Solutions</li>
-            <li>Machine Learning & Deep Learning Solution</li>
+            <li>Machine Learning & Deep Learning</li>
             <li>Business Analytics</li>
             <li>Natural Language Processing (NLP)</li>
             <li>Automation & Optimization</li>
             <li>Scalability</li>
             <li>Data Security & Compliance</li>
           </ul>
-
           <a
             class="mt-10 flex items-center text-sm bg-white group"
             href="https://trimatric.ai/services"
@@ -899,8 +873,8 @@
           </a>
         </div>
 
-        <!--Second service-->
-        <div class="mb-10">
+        <!-- Service Card 2 -->
+        <div class="w-[400px] p-6 shadow-lg rounded-2xl border border-gray-200">
           <svg
             width="100"
             height="99"
@@ -922,21 +896,17 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="w-[260px] md:w-[400px]">
-            <h2 class="font-semibold text-2xl md:text-3xl mt-10 mb-5">
-              Software Design & Development
-            </h2>
-            <p>
-              We offer comprehensive Software Design & Development services,
-              delivering customized solutions that meet the unique needs of
-              businesses across.
-            </p>
-
-            <div class="border border-b-[1px] my-5"></div>
-          </div>
-          <ul class="custom-list">
+          <h2 class="font-semibold text-2xl md:text-3xl mt-6 mb-4">
+            Software Design & Development
+          </h2>
+          <p>
+            We offer comprehensive Software Design & Development services,
+            delivering customized solutions that meet the unique needs of
+            businesses.
+          </p>
+          <ul class="custom-list mt-4">
             <li>User Research & Analysis</li>
-            <li>Wire framing & Prototyping</li>
+            <li>Wireframing & Prototyping</li>
             <li>UI/UX Consulting</li>
             <li>Custom Software Development</li>
             <li>Mobile App Development</li>
@@ -975,8 +945,8 @@
           </a>
         </div>
 
-        <!--Third service-->
-        <div>
+        <!--Service Card 3-->
+        <div class="w-[400px] p-6 shadow-lg rounded-2xl border border-gray-200">
           <svg
             width="101"
             height="85"
@@ -1070,17 +1040,17 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="w-[260px] md:w-[400px]">
-            <h2 class="font-semibold text-2xl md:text-3xl mt-10 mb-5">
-              Autonomous Surveillance Implementation
-            </h2>
-            <p>
-              We offer comprehensive Software Design & Development services,
-              delivering customized solutions that meet the unique needs of
-              businesses across.
-            </p>
-            <div class="border border-b-[1px] my-5"></div>
-          </div>
+
+          <h2 class="font-semibold text-2xl md:text-3xl mt-10 mb-5">
+            Autonomous Surveillance Implementation
+          </h2>
+          <p>
+            We offer comprehensive Software Design & Development services,
+            delivering customized solutions that meet the unique needs of
+            businesses across.
+          </p>
+          <div class="border border-b-[1px] my-5"></div>
+
           <ul class="custom-list">
             <li>Network Architect Design</li>
             <li>Scalable Solution</li>
@@ -1124,7 +1094,6 @@
         </div>
       </div>
     </section>
-    <!-- Services section starts here -->
 
     <!-- Work section starts here -->
     <section class="my-10 p-10 md:ps-20">
@@ -1134,67 +1103,113 @@
           Our Approach to Building AI Solutions
         </h1>
 
-        <!-- Steps -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <!-- Step 1 -->
-          <div class="md:border-r-2 md:border-gray-300">
-            <h3 class="text-6xl font-bold hollow-text mb-2">01</h3>
-            <p class="text-sm mb-4">/step/</p>
-            <h4 class="text-lg font-semibold mt-10 mb-2">
-              Problem Definition & Data Collection
-            </h4>
-            <p class="text-sm pe-5">
-              Define the business problem or objective. Identify and collect
-              relevant structured or unstructured data from various sources.
-              Ensure the data is accurate, representative, and sufficient for
-              model training.
-            </p>
+        <!-- Step Indicator -->
+        <div
+          class="flex items-center justify-center text-base text-gray-600 dark:text-gray-400 mb-6"
+        >
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-indigo-400 rounded-full flex items-center justify-center text-white text-xl"
+            >
+              1
+            </div>
+            <span class="ml-4 font-medium">Step One</span>
           </div>
+          <div class="h-1 w-16 bg-indigo-200 dark:bg-indigo-600"></div>
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl"
+            >
+              2
+            </div>
+            <span class="ml-4 font-medium">Step Two</span>
+          </div>
+          <div class="h-1 w-16 bg-blue-200 dark:bg-blue-600"></div>
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center text-white text-xl"
+            >
+              3
+            </div>
+            <span class="ml-4 font-medium">Step Three</span>
+          </div>
+          <div class="h-1 w-16 bg-green-200 dark:bg-green-600"></div>
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-xl"
+            >
+              4
+            </div>
+            <span class="ml-4 font-medium">Step Four</span>
+          </div>
+        </div>
 
-          <!-- Step 2 -->
-          <div class="md:border-r-2 md:border-gray-300">
-            <h3 class="text-6xl font-bold hollow-text mb-2">02</h3>
-            <p class="text-sm mb-4">/step/</p>
-            <h4 class="text-lg font-semibold mt-10 mb-2">
-              Data Preprocessing & Feature Engineering
-            </h4>
-            <p class="text-sm pe-5">
-              Clean the data by handling missing values, duplicates, and
-              standardizing formats. Create new features to enhance model
-              performance. Split the data into training, validation, and test
-              sets for effective model training and evaluation.
-            </p>
-          </div>
+        <!-- Slider Container -->
+        <div class="relative w-full overflow-hidden">
+          <div
+            id="slider"
+            class="flex transition-transform duration-500 ease-in-out"
+          >
+            <!-- Step 1 -->
+            <div class="w-full flex-shrink-0 p-6">
+              <h3 class="text-6xl font-bold hollow-text mb-2">01</h3>
+              <p class="text-sm mb-4">/step/</p>
+              <h4 class="text-lg font-semibold mt-10 mb-2">
+                Problem Definition & Data Collection
+              </h4>
+              <p class="text-sm pe-5">
+                Define the business problem or objective. Identify and collect
+                relevant structured or unstructured data from various sources.
+              </p>
+            </div>
 
-          <!-- Step 3 -->
-          <div class="md:border-r-2 md:border-gray-300">
-            <h3 class="text-6xl font-bold hollow-text mb-2">03</h3>
-            <p class="text-sm mb-4">/step/</p>
-            <h4 class="text-lg font-semibold mt-10 mb-2">
-              Model Selection & Training
-            </h4>
-            <p class="text-sm">
-              Select the appropriate algorithm for the problem (e.g.,
-              regression, classification). Train the model, tune
-              hyperparameters, and validate performance, making adjustments to
-              improve accuracy.
-            </p>
-          </div>
+            <!-- Step 2 -->
+            <div class="w-full flex-shrink-0 p-6">
+              <h3 class="text-6xl font-bold hollow-text mb-2">02</h3>
+              <p class="text-sm mb-4">/step/</p>
+              <h4 class="text-lg font-semibold mt-10 mb-2">
+                Data Preprocessing & Feature Engineering
+              </h4>
+              <p class="text-sm pe-5">
+                Clean the data by handling missing values, duplicates, and
+                standardizing formats. Create new features to enhance model
+                performance.
+              </p>
+            </div>
 
-          <!-- Step 4 -->
-          <div>
-            <h3 class="text-6xl font-bold hollow-text mb-2">04</h3>
-            <p class="text-sm mb-4">/step/</p>
-            <h4 class="text-lg font-semibold mt-10 mb-2">
-              Evaluation, Deployment & Monitoring
-            </h4>
-            <p class="text-sm">
-              Evaluate the model using metrics like accuracy and precision.
-              Deploy it in production and monitor its performance. Retrain and
-              update with new data to ensure accuracy and relevance for
-              real-world applications.
-            </p>
+            <!-- Step 3 -->
+            <div class="w-full flex-shrink-0 p-6">
+              <h3 class="text-6xl font-bold hollow-text mb-2">03</h3>
+              <p class="text-sm mb-4">/step/</p>
+              <h4 class="text-lg font-semibold mt-10 mb-2">
+                Model Selection & Training
+              </h4>
+              <p class="text-sm">
+                Select the appropriate algorithm for the problem (e.g.,
+                regression, classification). Train the model, tune
+                hyperparameters, and validate performance.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="w-full flex-shrink-0 p-6">
+              <h3 class="text-6xl font-bold hollow-text mb-2">04</h3>
+              <p class="text-sm mb-4">/step/</p>
+              <h4 class="text-lg font-semibold mt-10 mb-2">
+                Evaluation, Deployment & Monitoring
+              </h4>
+              <p class="text-sm">
+                Evaluate the model using metrics like accuracy and precision.
+                Deploy it in production and monitor its performance.
+              </p>
+            </div>
           </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="flex justify-between items-center mt-6">
+          <button id="prev" class="text-3xl">&#10094;</button>
+          <button id="next" class="text-3xl">&#10095;</button>
         </div>
       </div>
     </section>
@@ -1210,17 +1225,19 @@
           </h1>
         </div>
         <div class="relative">
-          <img
-            class="w-[90%] rounded-2xl"
-            src="https://trimatric.ai/wp-content/uploads/2024/10/UI-Surveillance-2.webp"
-            alt="Surveillance UI"
-          />
-          <a
-            href="#"
-            class="absolute top-2 right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black text-white rounded-full shadow-lg hover:bg-red-600"
-          >
-            &rarr;
-          </a>
+          <div class="relative w-[70%]">
+            <img
+              class="rounded-2xl"
+              src="https://trimatric.ai/wp-content/uploads/2024/10/UI-Surveillance-2.webp"
+              alt="Surveillance UI"
+            />
+            <a
+              href="#"
+              class="absolute top-2 right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black text-white rounded-full shadow-lg hover:bg-red-600"
+            >
+              &rarr;
+            </a>
+          </div>
           <div class="w-[90%] md:w-[60%] flex flex-col mt-5">
             <h1 class="font-semibold text-xl md:text-3xl mb-5">
               Autonomous Surveillance | We secure your security
@@ -1248,17 +1265,19 @@
         </div>
 
         <div class="relative">
-          <img
-            class="w-[90%] rounded-2xl"
-            src="https://trimatric.ai/wp-content/uploads/2024/10/01.png"
-            alt="Face Recognition UI"
-          />
-          <a
-            href="#"
-            class="absolute top-2 right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black text-white rounded-full shadow-lg hover:bg-red-600"
-          >
-            &rarr;
-          </a>
+          <div class="relative w-[70%]">
+            <img
+              class="rounded-2xl"
+              src="https://trimatric.ai/wp-content/uploads/2024/10/01.png"
+              alt="Face Recognition UI"
+            />
+            <a
+              href="#"
+              class="absolute top-2 right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-black text-white rounded-full shadow-lg hover:bg-red-600"
+            >
+              &rarr;
+            </a>
+          </div>
 
           <div class="w-[90%] md:w-[60%] flex flex-col mt-5">
             <h1 class="font-semibold text-xl md:text-3xl mb-5">
@@ -1318,7 +1337,7 @@
         </div>
 
         <!-- Products Cards -->
-        <div class="w-[100%] flex flex-wrap gap-5 pt-10 m-auto">
+        <div class="w-[100%] flex justify-center flex-wrap gap-5 pt-10 mx-auto">
           <!--Card 1-->
           <a
             href="https://trimatric.ai/projects/road-safety-security-surveillance-system/"
